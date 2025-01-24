@@ -4,12 +4,12 @@ import matplotlib.pyplot as plt
 import pickle
 
 #Load all the instances that are required 
- with open('model.pkl','rb') as file:
-     model=pickle.load(file)
- with open('scaler.pkl','rb') as file:
-     model=pickle.load(file)
- with open('pca.pkl','rb') as file:
-     model=pickle.load(file)
+with open('model.pkl','rb') as file:
+    model=pickle.load(file)
+with open('scaler.pkl','rb') as file:
+    scaler=pickle.load(file)
+with open('pca.pkl','rb') as file:
+    pca=pickle.load(file)
      
      
 def prediction(input_data):
