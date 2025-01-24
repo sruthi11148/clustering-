@@ -16,12 +16,12 @@ def prediction(input_data):
  scaled_data=scaler.transform(input_data)
  pca_data=pca.transform(scaled_data)
  pred=model.predict(pca_data)[0]
-     if pred==0:
-         return 'Developed'
-     elif pred==1:
-         return 'Developing'
-     else:
-         return 'Under Developed'
+    if pred==0:
+        return 'Developed'
+    elif pred==1:
+        return 'Developing'
+    else:
+        return 'Under Developed'
 def main():
   st.title('HELP International Foundation')
   st.subheader(''' This application helps to classify the country on the basis of its scio-ecnomin and health factors''')
